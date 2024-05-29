@@ -6,7 +6,7 @@ RUN apt update && \
     apt install -y build-essential python3-minimal libpng-dev ca-certificates git fuse
 
 # Fetch Xen-Orchestra sources from git stable branch
-RUN git clone -b master https://github.com/vatesfr/xen-orchestra /etc/xen-orchestra
+RUN git clone -b master https://github.com/NebelKat/xen-admin /etc/xen-orchestra
 
 # Run build tasks against sources
 # Docker buildx QEMU arm64 emulation is slow, so we set timeout for yarn
